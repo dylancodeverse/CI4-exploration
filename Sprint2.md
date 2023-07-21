@@ -39,3 +39,10 @@ Records:
 
 Open up the app/Models/NewsModel.php 
 
+# Step 4 :
+
+Now that the queries are written, the model should be tied to the views that are going to display the news items to the user.
+
+    Open app/Controllers/News.php.
+
+
