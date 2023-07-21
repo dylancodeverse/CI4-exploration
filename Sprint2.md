@@ -45,4 +45,16 @@ Now that the queries are written, the model should be tied to the views that are
 
     Open app/Controllers/News.php.
 
+    Create app/Views/news/index.php 
+
+>We are again using using esc() to help prevent XSS attacks. But this time we also passed “url” as a second    parameter. That’s because attack patterns are different depending on the context in which the output is used:
+
+    <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+
+Now:
+
+    app/Views/news/view.php
+
+
+
 
