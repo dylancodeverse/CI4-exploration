@@ -34,3 +34,8 @@ Records:
     See app/Config/Database.php
 
 # Step 3 :
+
+> Models are the place where you retrieve, insert, and update information in your database or other data stores.
+
+Open up the app/Models/NewsModel.php 
+
