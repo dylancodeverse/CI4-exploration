@@ -25,3 +25,8 @@ In general, if you use $methods filters, you should disable Auto Routing (Legacy
 
     $routes->setAutoRoute(false);
 
+# Step 2 : Create a Form 
+
+new view at app/Views/news/create.php
+
+
