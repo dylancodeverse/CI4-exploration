@@ -29,3 +29,8 @@ Records:
         (2,'Say it is not so!','say-it-isnt-so','Scientists conclude that some programmers have a sense of humor.'),
         (3,'Caffeination, Yes!','caffeination-yes','World s largest coffee shop open onsite nested coffee shop for staff only.');
 
+# Step 2:
+
+    See app/Config/Database.php
+
+# Step 3 :
