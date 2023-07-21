@@ -36,3 +36,17 @@ new view at app/Views/news/create.php
  Function create()
 
  views app/Views/news/success.php
+
+# Step 3 : Model updating
+
+The save() method that was used will determine whether the information should be inserted or if the row already exists and should be updated, based on the presence of a primary key.
+
+In this case, there is no id field passed to it, so it will insert a new row into it’s table, news.
+
+Must:
+Edit the NewsModel to provide it a list of updatable fields in the $allowedFields property.
+
+see NewsModel
+
+    protected $allowedFields = ['title', 'slug', 'body'];
+
