@@ -30,3 +30,9 @@ In general, if you use $methods filters, you should disable Auto Routing (Legacy
 new view at app/Views/news/create.php
 
 
+# Step 2-B : Controller
+
+ Controller app/Controller/News 
+ Function create()
+
+ views app/Views/news/success.php
