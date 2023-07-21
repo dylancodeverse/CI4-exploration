@@ -2,7 +2,7 @@
 
 namespace Config;
 
-// Create a new instance of our RouteCollection class.
+// Create a  new instance of our RouteCollection class.
 $routes = Services::routes();
 
 /*
