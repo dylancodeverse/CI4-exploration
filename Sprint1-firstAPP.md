@@ -18,6 +18,33 @@ If $data is a string, then it simply escapes and returns it. If $data is an arra
 
 Valid context values: html, js, css, url, attr, raw
 
+# Step three  Adding logic to the Controller:
+
+Create static page bodies in app/Views/pages
+
+In that directory, create two files named home.php and about.php. Within those files, type some text - anything you’d like 
+
+Modification of the Controller Pages
+
+> Controllers must return a string or a Response object.
+
+# Step 4 : Routing
+
+We have made the controller. The next thing is to set routing rules. Routing associates a URI with a controller’s method.
+
+Open the routing file located at app/Config/Routes.php and look for the “Route Definitions” section of the configuration file.
+
+CodeIgniter reads its routing rules from top to bottom and routes the request to the first matching rule. 
+
+> The third rule in the $routes object matches a GET request to a URI segment using the placeholder (:segment), and passes the parameter to the view() method of the Pages class.
+
+# Step 5 : Running the App
+
+Ready to test? You cannot run the app using PHP’s built-in server, since it will not properly process the .htaccess rules that are provided in public, and which eliminate the need to specify “index.php/” as part of a URL. CodeIgniter has its own command that you can use though.
+
+From the command line, at the root of your project:
+
+> php spark serve
 
 
 

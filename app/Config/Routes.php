@@ -31,6 +31,12 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+use App\Controllers\first\Pages;
+
+$routes->get('pages', [Pages::class, 'index']);
+
+$routes->get('(:segment)', [Pages::class, 'view']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
