@@ -38,5 +38,14 @@ CodeIgniter reads its routing rules from top to bottom and routes the request to
 
 > The third rule in the $routes object matches a GET request to a URI segment using the placeholder (:segment), and passes the parameter to the view() method of the Pages class.
 
+# Step 5 : Running the App
+
+Ready to test? You cannot run the app using PHP’s built-in server, since it will not properly process the .htaccess rules that are provided in public, and which eliminate the need to specify “index.php/” as part of a URL. CodeIgniter has its own command that you can use though.
+
+From the command line, at the root of your project:
+
+> php spark serve
+
+
 
 
