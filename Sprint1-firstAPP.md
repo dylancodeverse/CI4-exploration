@@ -28,5 +28,15 @@ Modification of the Controller Pages
 
 > Controllers must return a string or a Response object.
 
+# Step 4 : Routing
+
+We have made the controller. The next thing is to set routing rules. Routing associates a URI with a controller’s method.
+
+Open the routing file located at app/Config/Routes.php and look for the “Route Definitions” section of the configuration file.
+
+CodeIgniter reads its routing rules from top to bottom and routes the request to the first matching rule. 
+
+> The third rule in the $routes object matches a GET request to a URI segment using the placeholder (:segment), and passes the parameter to the view() method of the Pages class.
+
 
 
