@@ -8,6 +8,7 @@ class NewsModel extends Model
 {
     protected $table = 'news';
 
+    protected $allowedFields = ['title', 'slug', 'body'];
 
 /*
     With this code, you can perform two different queries. 
