@@ -18,7 +18,10 @@ If $data is a string, then it simply escapes and returns it. If $data is an arra
 
 Valid context values: html, js, css, url, attr, raw
 
+# Step three  Adding logic to the Controller:
 
+Create static page bodies in app/Views/pages
 
+In that directory, create two files named home.php and about.php. Within those files, type some text - anything you’d like 
 
 
