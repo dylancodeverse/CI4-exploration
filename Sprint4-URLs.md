@@ -10,7 +10,9 @@ Step 2:
 
     Filter \App\Filters\AuthFilter::class
 
-Step 2: 
+    App/Config/Filters
+
+Step 3: 
 
     Routes
 
