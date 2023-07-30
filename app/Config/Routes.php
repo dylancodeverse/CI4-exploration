@@ -2,17 +2,13 @@
 
 namespace Config;
 
-// Create a new instance of our RouteCollection class.
+// Create a  new instance of our RouteCollection class.
 $routes = Services::routes();
 
 /*
  * --------------------------------------------------------------------
  * Router Setup
  * --------------------------------------------------------------------
- */
-
- /*
-    init
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
@@ -24,7 +20,6 @@ $routes->set404Override();
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
 // $routes->setAutoRoute(false);
-$routes->setAutoRoute(false);
 
 /*
  * --------------------------------------------------------------------
@@ -35,42 +30,6 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-
-$routes->get('/home',[\App\Controllers\Home::class,'index']);
-
-$routes->get('/user/(:num)/edit',[\App\Controllers\User::class ,'edit']);
-
-$routes->group('user', static function($routes){
-
-    $routes->get('show',[\App\Controllers\User::class,'index']);
-
-});
-
-$routes->group( 'admin' , static function($routes){
-
-    $routes->get('',[\App\Controllers\Admin::class,'index']);
-
-    $routes->get('users',[\App\Controllers\Admin::class ,'listuser']);
-
-    // filter treatment
-    $routes->get('dashboard',[\App\Controllers\Admin::class ,'dashboard'] ,['filter'=>['authentification','csrf']]);
-    // reverse routing 
-    $routes->get('test',[\App\Controllers\Admin::class ,'listuser'],['as'=>'liste']);
-
-    $routes->get('connect',[\App\Controllers\Admin::class ,'connect']) ;
-
-    $routes->get('disconnect',[\App\Controllers\Admin::class ,'disconnect']) ;
-
-    
-});
-
-$routes->set404Override(static function(){
-    echo view('errors/html/not_found.html');
-});
-
-
-
-
 
 /*
  * --------------------------------------------------------------------
