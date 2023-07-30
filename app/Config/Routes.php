@@ -64,6 +64,9 @@ $routes->group( 'admin' , static function($routes){
     
 });
 
+$routes->set404Override(static function(){
+    echo view('errors/html/not_found.html');
+});
 
 
 
