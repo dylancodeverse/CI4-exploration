@@ -12,15 +12,16 @@ class Form extends BaseController
     public function index()
     {
         // mijery ve hoe post le requete (milay kosa)
-        if (! $this->request->is('post')) {
-            return view( APPPATH.'Views/form/signup');
-
+        if (! $this->request->is('post')) 
+        {
+            return view( 'form/signup');
         }
 
         $rules = [];
 
-        if (! $this->validate($rules)) {
-            return view( APPPATH.'Views/form/signup');
+        if (! $this->validate($rules)) 
+        {
+            return view('form/signup');
         }
 
         return view('success');
