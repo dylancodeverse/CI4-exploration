@@ -17,7 +17,7 @@ class Form extends BaseController
             return view( 'form/signup');
         }
 
-        $rules = [];
+        $rules = [];    
 
         if (! $this->validate($rules)) 
         {
