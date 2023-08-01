@@ -12,14 +12,16 @@ class Form extends BaseController
     public function index()
     {
         // mijery ve hoe post le requete (milay kosa)
-        if (! $this->request->is('post')) {
-            return view('signup');
+        if (! $this->request->is('post')) 
+        {
+            return view( 'form/signup');
         }
 
-        $rules = [];
+        $rules = [];    
 
-        if (! $this->validate($rules)) {
-            return view('signup');
+        if (! $this->validate($rules)) 
+        {
+            return view('form/signup');
         }
 
         return view('success');
