@@ -11,3 +11,8 @@ Step 2:
 
     A controller method to receive and process the submitted data.
 
+
+Step 3: 
+
+    Then add routes for the controller in app/Config/Routes.php:
+
