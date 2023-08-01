@@ -36,8 +36,8 @@ $routes->get('/', 'Home::index');
 // ETO:
 
 
-$routes->get('form', 'Form::index');
-$routes->post('form', 'Form::index');
+$routes->get('form', [\App\Controllers\Form::class,'index']);
+$routes->post('form', [\App\Controllers\Form::class,'index']);
 
 
 
