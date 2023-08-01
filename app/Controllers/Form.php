@@ -13,13 +13,14 @@ class Form extends BaseController
     {
         // mijery ve hoe post le requete (milay kosa)
         if (! $this->request->is('post')) {
-            return view('signup');
+            return view( APPPATH.'Views/form/signup');
+
         }
 
         $rules = [];
 
         if (! $this->validate($rules)) {
-            return view('signup');
+            return view( APPPATH.'Views/form/signup');
         }
 
         return view('success');
