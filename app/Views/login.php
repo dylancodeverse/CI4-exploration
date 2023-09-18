@@ -7,7 +7,28 @@
 </head>
 <body>
     <h2>Connexion</h2>
-    <form action="process_login.php" method="POST">
+    <!-- 
+
+    The session() function is used to get the Session object, 
+        and session()->getFlashdata('error') is used to display the error related 
+        to CSRF protection to the user. 
+    However, by default, if a CSRF validation check fails, 
+        an exception will be thrown, so it does not work yet.  
+
+-->
+
+<?= session()->getFlashdata('error') ?>
+
+<!-- 
+
+    The validation_list_errors() function provided by the Form Helper 
+        is used to report errors related to form validation.
+
+-->
+<?= validation_list_errors() ?>
+
+
+    <form action="/connect" method="POST">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required><br>
 
