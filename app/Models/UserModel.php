@@ -12,7 +12,7 @@ class UserModel extends Model {
 
 
     // raha ohatra ka tsy te hampiasa anle par defaut
-    protected $DBGroup = 'test';
+    protected $DBGroup = 'default';
 
 
 
