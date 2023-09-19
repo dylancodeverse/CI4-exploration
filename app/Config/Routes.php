@@ -2,7 +2,7 @@
 
 namespace Config;
 
-use App\Models\UserModel;
+use App\Controllers\LoginController;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -31,7 +31,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/',[UserModel::class,'index'] );
+$routes->get('/',[LoginController::class,'index'] );
 
 /*
  * --------------------------------------------------------------------
