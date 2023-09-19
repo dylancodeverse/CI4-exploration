@@ -30,7 +30,7 @@ class Database extends Config
         'username' => 'postgres',
         'password' => '',
         'database' => 'ci4tutorial',
-        'DBDriver' => 'postgre',
+        'DBDriver' => 'Postgre',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => true,
