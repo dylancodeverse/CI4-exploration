@@ -33,6 +33,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/',[LoginController::class,'index'] );
 
+$routes->post('/connect', [LoginController::class,'login']) ;
 /*
  * --------------------------------------------------------------------
  * Additional Routing

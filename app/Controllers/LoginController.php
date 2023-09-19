@@ -2,6 +2,8 @@
 
 namespace App\Controllers ;
 
+use App\Models\UserModel;
+
 class LoginController extends BaseController 
 {
 
@@ -15,7 +17,6 @@ class LoginController extends BaseController
 
     public function login()
     {
-
     }
     
 }
