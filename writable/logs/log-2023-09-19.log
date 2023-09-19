@@ -1,0 +1,7 @@
+CRITICAL - 2023-09-19 20:37:42 --> Call to undefined method App\Models\UserModel::initController
+in SYSTEMPATH/Model.php on line 838.
+ 1 SYSTEMPATH/CodeIgniter.php(905): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/CI4-exploration/public/index.php')
